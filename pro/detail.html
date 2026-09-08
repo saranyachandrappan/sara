@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material Details | EduBridge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><span class="brand-mark"><i class="fa-solid fa-bridge"></i></span><span class="brand-name">EduBridge</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+      <div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3"><li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link active" href="materials.html">Materials</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="contact.html">Contact</a></li><li><a class="btn btn-light btn-sm" href="login.html">Log in</a></li><li><a class="btn btn-primary btn-sm" href="register.html">Join free</a></li></ul></div>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <div class="container">
+      <a href="materials.html" class="small text-muted d-inline-block mb-4"><i class="fa-solid fa-arrow-left me-2" aria-hidden="true"></i>Back to materials</a>
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <div class="surface p-4 p-md-5">
+            <div class="d-flex gap-3 align-items-start mb-4"><div class="file-icon"><i class="fa-regular fa-file-lines" aria-hidden="true"></i></div><div><div class="small text-primary fw-bold mb-2">Data Structures</div><h1 class="h2 mb-2">Algorithms &amp; Complexity Notes</h1><div class="small text-muted">Uploaded by Maya Patel · Sep 04, 2026</div></div></div>
+            <p class="text-muted lh-lg">A focused guide to asymptotic analysis, sorting, searching, and graph algorithms. These notes are structured for quick review before a lab or midterm, with examples that connect the theory to practical implementation.</p>
+            <div class="d-flex flex-wrap gap-2 mt-4"><button class="btn btn-primary demo-action" data-message="Download started for Algorithms &amp; Complexity Notes."><i class="fa-solid fa-download me-2" aria-hidden="true"></i>Download PDF</button><button class="btn btn-light bookmark-btn" data-id="1" aria-label="Bookmark material"><i class="fa-regular fa-bookmark me-2" aria-hidden="true"></i>Save</button><a class="btn btn-light" href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open me-2" aria-hidden="true"></i>Open in NotebookLM</a></div>
+            <hr class="my-5">
+            <h2 class="h5 mb-3">Reviews &amp; comments</h2>
+            <div class="d-flex gap-3 mb-4"><div class="avatar">JC</div><div><div class="fw-bold small">Jordan Cruz <span class="text-warning ms-2" aria-label="5 out of 5 stars">★★★★★</span></div><p class="small text-muted mb-0 mt-1">The graph examples made the last section much easier to understand.</p></div></div>
+            <form class="d-flex gap-2 needs-validation" novalidate data-demo data-success="Your comment was posted."><label class="visually-hidden" for="comment">Add a comment</label><input id="comment" class="form-control" required placeholder="Share a helpful note..."><button class="btn btn-dark" type="submit">Post</button></form>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="surface p-4 mb-4"><h2 class="h6 mb-4">File details</h2><div class="d-flex justify-content-between small mb-3"><span class="text-muted">Format</span><strong>PDF</strong></div><div class="d-flex justify-content-between small mb-3"><span class="text-muted">Course</span><strong>Data Structures</strong></div><div class="d-flex justify-content-between small mb-3"><span class="text-muted">Downloads</span><strong>128</strong></div><div class="d-flex justify-content-between small"><span class="text-muted">Department</span><strong>Computer Science</strong></div></div>
+          <div class="surface p-4"><h2 class="h6 mb-3">Related materials</h2><a href="detail.html?id=5" class="d-flex gap-3 align-items-center py-3 border-bottom"><div class="file-icon file-icon-small"><i class="fa-regular fa-file-lines" aria-hidden="true"></i></div><div class="small fw-bold">Operating Systems Review</div></a><a href="detail.html?id=3" class="d-flex gap-3 align-items-center py-3"><div class="file-icon file-icon-small"><i class="fa-regular fa-file-lines" aria-hidden="true"></i></div><div class="small fw-bold">Network Layers Cheat Sheet</div></a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
