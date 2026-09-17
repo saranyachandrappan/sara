@@ -1,0 +1,28 @@
+app = "edubridge"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  PORT = "8080"
+  DATABASE_PATH = "/data/edubridge.db"
+  UPLOAD_DIR = "/data/uploads"
+  TRUST_PROXY = "true"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[mounts]]
+  source = "edubridge_data"
+  destination = "/data"
+
+[vm]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 512
